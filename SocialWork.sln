@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4FE635B7-BCE7-4377-A24D-9D07B5CA375F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialWork.Domain", "SocialWork.Domain\SocialWork.Domain.csproj", "{487DA6A0-05A2-463C-8BCA-C3934D70C790}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{3417C9FA-EF6D-4BE1-AD68-4973D0AC9458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialWork.DAL", "SocialWork.DAL\SocialWork.DAL.csproj", "{4DD6CBAD-1414-4497-847D-7645D2BDFD9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{D5C22503-ACB8-4E3F-A701-08178CC3EB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialWork.Service", "SocialWork.Service\SocialWork.Service.csproj", "{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialWork", "SocialWork\SocialWork.csproj", "{A784F0E2-A50A-433A-BB40-286E18351708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{487DA6A0-05A2-463C-8BCA-C3934D70C790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487DA6A0-05A2-463C-8BCA-C3934D70C790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487DA6A0-05A2-463C-8BCA-C3934D70C790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487DA6A0-05A2-463C-8BCA-C3934D70C790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD6CBAD-1414-4497-847D-7645D2BDFD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD6CBAD-1414-4497-847D-7645D2BDFD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD6CBAD-1414-4497-847D-7645D2BDFD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD6CBAD-1414-4497-847D-7645D2BDFD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A784F0E2-A50A-433A-BB40-286E18351708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A784F0E2-A50A-433A-BB40-286E18351708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A784F0E2-A50A-433A-BB40-286E18351708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A784F0E2-A50A-433A-BB40-286E18351708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{487DA6A0-05A2-463C-8BCA-C3934D70C790} = {4FE635B7-BCE7-4377-A24D-9D07B5CA375F}
+		{4DD6CBAD-1414-4497-847D-7645D2BDFD9D} = {3417C9FA-EF6D-4BE1-AD68-4973D0AC9458}
+		{5D4F6B7B-EE3B-4C15-9955-4055B77B2FD9} = {D5C22503-ACB8-4E3F-A701-08178CC3EB00}
+	EndGlobalSection
+EndGlobal

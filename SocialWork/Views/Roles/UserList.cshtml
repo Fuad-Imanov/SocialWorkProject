@@ -1,0 +1,14 @@
+﻿@model IEnumerable<SocialWork.Domain.Entity.User>
+ 
+<h2>İstifadəçilərin siyahısı</h2>
+<table class="table">
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-userid="@user.Id">İcazə</a>
+            </td>
+        </tr>
+    }
+</table>

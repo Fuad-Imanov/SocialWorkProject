@@ -1,0 +1,33 @@
+﻿@model SocialWork.Domain.ViewModels.User.EditUserViewModel
+
+    <form  asp-asp-controller="User" asp-action="Edit" method="post" >
+        <div asp-validation-summary="All"> </div>
+        <input asp-for="Id"  type="hidden">
+
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" type="text" />
+    <input type="submit" value="Сохранить"  />
+    </form>
+
+
+@*@model CustomIdentityApp.ViewModels.EditUserViewModel
+@{
+    ViewBag.Title = "Редактирование пользователя";
+}
+<form asp-action="Edit" asp-controller="Users">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Id" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Email</label>
+        <input type="text" asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Year" class="control-label">Год рождения</label>
+        <input type="number" asp-for="Year" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-outline-secondary" />
+    </div>
+</form>*@

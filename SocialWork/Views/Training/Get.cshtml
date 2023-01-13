@@ -1,0 +1,44 @@
+﻿@model SocialWork.Domain.Entity.Training
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div style="padding: 10px;"></div>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="~/images/@Model?.imageUrl"class="img-fluid rounded-start rounded" alt="@Model?.name">
+        </div>
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Model?.name</h5>
+                @{
+                    if (@Model?.price != 0)
+                    {
+                        <p class="card-text"><b>Qiymət: </b>@Model?.price AZN</p>
+                    }
+                    else
+                    {
+                        <p>"Təlim ödənişsizdir"</p>
+                    }
+                }
+                @*<p class="card-text"><small class="text-muted">Başlama tarixi - @Model?.startDate</small></p>*@
+            </div>
+            
+                                      
+        </div>
+        <hr/>
+        <form method="post" asp-controller="Training" asp-action="Delete" asp-route-id="@Model?.id">
+            <button class="btn btn-danger" type="submit">Sil</button>          
+         </form>
+                    <a asp-controller="Training" asp-action="Delete" asp-route-id="@Model?.id" class="btn btn-danger">Sil</a>y
+                                                                        <a asp-controller="Training" asp-action="Save" asp-route-id="@Model?.id" class="btn btn-primary">Dəyiş</a>
+        <div class="col-md-4">
+            <div class="card-body">
+                <p class="card-text"><b>Ətraflı: </b>@Model?.description</p>
+            </div>
+        </div>
+    </div>
+</div>
